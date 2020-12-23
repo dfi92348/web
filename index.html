@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <style> 
+  .head{
+            background-color: antiquewhite;color: black;font-weight: bold;font-size: 30px;
+            text-align: center;padding: 10px;
+                   
+        }
+    
+       
+       
+       body{
+  background: url(https://storage.googleapis.com/www-cw-com-tw/article/201810/article-5bd182cf13ebb.jpg);
+}
+
+       .content{
+                width=1000px;margin-left: auto;margin-right: auto;
+            }    
+      
+        .box{
+            width:280px;padding:10px;margin: 10px;background-color: aquamarine;
+            display:inline-block;vertical-align: top;
+            text-align: center; line-height: 20px;
+        }
+       
+       .container{
+  width: 1000px;
+  margin: 0 auto;
+}
+.card{
+  /* 設定父親定位點 */
+  position: relative;
+  width: 75%;
+  float: none;
+  margin: 10px;
+   
+}
+
+       
+
+  
+.info{
+/*   display: none; */
+  opacity: 0;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.3);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  padding-top: 40px;
+  -webkit-transition:.5s ease-out;
+  
+}
+.info p{
+  color: aqua;
+}
+.info:hover{
+/*   -webkit-transition: 500ms; */
+  margin-top: 0;
+  opacity: 1;  
+}
+    
+ 
+.img-1{width:100%;transition: all 0.6s;}
+.img-1:hover{transform: scale(1.2);} 
+    
+    
+    </style>
+    </head>
+
+<body>
+    <div class="head">古蹟探訪</div> 
+    <<div class="container">
+  
+    <section id="section0"style="background-color:black; color: aliceblue; width: 100%">
+    <div class="card">
+
+      <div class="img_box"><img src="https://lh3.googleusercontent.com/proxy/2pZCIO70LHjQpibGb_AFafX6xZVue9pefg3JECXhVhgwAmY5zoZUvoMt6B4KTaXzkUnSri9vPIv6tr5yGsW8KdJgcz2m0_T1vudrlMkDhBYbu27fDB6RZto" class="img-1" alt="" style="display:block; width: auto"></div>
+      <div class="info">
+      <button>View More</button>
+      <p>Hello World!</p>
+        <a style="color: aliceblue;"  href="#section1">北部</a>   
+         <a style="color: aliceblue;"  href="#section1">中部</a>
+           <a style="color: aliceblue;"  href="#section1">南部</a>
+           <a style="color: aliceblue;"  href="#section1">東部</a>
+    </div>
+  </div>
+  </section>
+   <section id="section1"style="background-color:black; color: aliceblue;">
+         
+        <div onclick="togglemenu(1)">北部</div>
+    <ul id="menu-1">
+        <li></li>
+        <li><a  style="color: antiquewhite"href="#section2" >紅毛城</a> </li>
+        <li>...</li>
+        <li>....</li>
+        
+        </ul>
+        
+     <div onclick="togglemenu(2)">中部</div>
+    <ul id="menu-2">
+        <li ><a  style="color: antiquewhite"href="#section3">彰化孔廟</a></li>
+        <li>第...項</li>
+        <li>第...項</li>
+        <li>第...項</li>
+        <li>第...項</li>
+        
+        </ul>
+    
+     <div onclick="togglemenu(3)">南部</div>
+    <ul id="menu-3">
+        <li><a  style="color: antiquewhite"href="#section4" >安平古堡</a></li>
+        <li>第...項</li>
+        <li>第...項</li>
+        <li>第...項</li>
+        <li>第...項</li>
+        
+        </ul>
+      <div onclick="togglemenu(2)">東部</div>
+    <ul id="menu-2">
+        <li><a  style="color: antiquewhite"href="#section5" >玉里神社</a></li>
+        <li>第...項</li>
+        <li>第...項</li>
+        <li>第...項</li>
+        <li>第...項</li>
+        
+        </ul>
+    
+       
+       
+       
+       
+       
+     <section id="section2"style="background-color:black; color: aliceblue;">
+         
+     
+         
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+          <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         </section>
+     <section id="section3"style="background-color:black; color: aliceblue;">
+         
+       
+         
+          <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+          <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         </section>
+    
+    
+     <section id="section4"style="background-color:black; color: aliceblue;">
+         
+       
+         
+          <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+          <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         </section>
+    
+     <section id="section5"style="background-color:black; color: aliceblue;">
+         
+        <a style="color: aliceblue;"  href="#section0">回頂部</a>
+         
+          <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+          <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         </section>
+    
+     <section id="section6"style="background-color:black; color: aliceblue;">
+         
+        <a style="color: aliceblue;"  href="#section0">回頂部</a>
+         
+          <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+          <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         </section>
+    
+     <section id="section7"style="background-color:black; color: aliceblue;">
+         
+        <a style="color: aliceblue;"  href="#section0">回頂部</a>
+         
+          <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+          <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         </section>
+    
+     <section id="section8"style="background-color:black; color: aliceblue;">
+         
+        <a style="color: aliceblue;"  href="#section0">回頂部</a>
+         
+          <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+          <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         </section>
+    
+    
+    <section id="section9"style="background-color:black; color: aliceblue;">
+         
+        <a style="color: aliceblue;"  href="#section0">回頂部</a>
+         
+          <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+          <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         <p>內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+         </section>
+    
+    
+    
+    
+    </body>
+
+
+</html>
+
+
+
