@@ -1,0 +1,26 @@
+.pics {position:relative;} 
+.pics img { position:absolute;
+  /* 淡出淡入效果2秒 */
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 1s ease-in-out;
+ }
+ .pics img:last-child:hover{
+   /* 滑入時第一張透明度設0 */
+    opacity:0;}
+.pic{width:500px; height:350px;overflow:hidden;}
+.pic img{transform:scale(1,1);transition: all 1s ease-out;}
+.pic img:hover{transform:scale(1.2,1.2);}
+
+.pics1 {position:relative;} 
+.pics1 img { position:absolute;
+  /* 淡出淡入效果2秒 */
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 1s ease-in-out;
+ }
+ .pics1 img:-child:hover{
+   /* 滑入時第一張透明度設0 */
+    opacity:0;}
