@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>嘉義古蹟</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <style>
+      .head{
+            background-color: antiquewhite;color: black;font-weight: bold;font-size: 30px;
+            text-align: center;padding: 10px;
+                   
+        }
+      
+
+        body {
+            background-image: url(https://cestmarie.com/wp-content/uploads/2019/01/Screenshot-3.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+ 
+ p { 
+    
+    line-height: 40px;　　　          　/* 設定文字行距 */
+   
+}
+
+    .container{
+  width: 900px;
+  margin: 0 auto;
+}
+.card{
+  /* 設定父親定位點 */
+  position: relative;
+  width: 270px;
+  
+  float:left;
+  margin: 15px;
+}
+img{
+  display: block;
+  width: 270px;
+  height:200px;  
+
+}
+.info{
+/*   display: none; */
+  opacity: 0;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.3);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.info:hover{
+  -webkit-transition: 500ms;
+  opacity: 1;
+}
+    
+    .photo{
+    float:right;
+    width:50%;
+}
+.intro{
+    float:left;
+    width:50%;
+}
+    
+    .info a{
+  color: #fff;
+  font-size:18px;
+}
+   
+    .toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+ 
+/* 48px */
+.toTop-arrow {
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 25px;
+	height: 6px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.42rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.42rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+/* 56px */
+.toTop-arrow {
+	width: 3.5rem;
+	height: 3.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 31px;
+	height: 7px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.4rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.4rem;
+}
+.toTop-arrow:focus {outline: none;}
+    
+    
+      .fix{
+  width:60px;
+  height:30px;
+  border:1px solid #000;
+  position:fixed;
+  top:65px;
+  right:0px;
+  background-color: azure;
+}
+    </style>
+    
+    
+    
+    </head>
+
+<body>
+   <button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+</script>
+    
+    
+     <a class="fix" href="index.html">回首頁</a>
+    <div class="head">嘉義古蹟</div> 
+  
+    
+   <div class="container">
+   
+  <div class="card">
+    <img src="https://travel.chiayi.gov.tw/upload/travels/1387d3b3dcb44e96990367fcad020bc4.jpg" alt="">
+    <div class="info">
+     <a  href="#section5">紅毛井</a>   
+
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://travel.chiayi.gov.tw/upload/travels/820d6b7dd31581b3a3be47230ae1449c.jpg" alt="">
+    <div class="info">
+    <a  href="#section4">嘉義蘇周連宗祠</a> 
+      
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://travel.chiayi.gov.tw/upload/travels/15aff5d5a489c638b638d9622506230a.jpg" alt="">
+    <div class="info">
+     <a  href="#section3">嘉義城隍廟</a> 
+      
+    </div>
+  </div>
+   <div class="card">
+    <img src="https://kinmen.travel/image/2024/1024x768" alt="">
+    <div class="info">
+     <a   style="color: aliceblue;"  href="#section2">孔廟</a> 
+     
+    </div>
+  </div>
+  
+         <div class="card">
+    <img src="https://travel.chiayi.gov.tw/upload/travels/f2b59ec68183f610f736247e318e14c4.jpg" alt="">
+    <div class="info">
+     <a  href="#section1">十二門古砲</a>
+      
+    </div>
+  </div>
+         <div class="card">
+    <img src="https://travel.chiayi.gov.tw/upload/travels/cc449a734e781000d29df02b18792802.jpg" alt="">
+    <div class="info">
+     <a  href="#section6">九華山地藏庵</a> 
+     
+    </div>
+  </div>
+         </div>
+  
+  
+   
+    <section id="section1" >
+    
+    <div  class="container">
+    
+         
+     
+         <hr>
+       <h1>十二門古砲</h1>
+        <p >這十二門古砲系於西元1975年移置現地，其中一門砲管鑄字清晰可見，內容為：「嘉慶十二年秋，奉閩浙總部堂阿，福建巡撫部長，鑄造台協水師左營大砲，一位重一千斤」等字樣。
+            其古砲來源尚無資料可稽，可能與嘉義出身的水師提督王得祿有關，也可能是原配置在東、南、西北城門的古砲。</p>
+         
+             <div class="photo"><img src="https://travel.chiayi.gov.tw/upload/travels/f2b59ec68183f610f736247e318e14c4.jpg" style=" width:540px ; height:360px ;"  ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　<li>電話:886-5-2294593</li>
+　<li>地址:嘉義市東區東川里嘉義公園</li>
+<li>開放時星期日：24小時營業</li>
+            <li>星期一：24小時營業</li>
+            <li>星期二：24小時營業</li>
+            <li>星期三：24小時營業</li>
+            <li>星期四：24小時營業</li>
+                      
+ <li>星期五：24小時營業</li>
+            <li>星期六：24小時營業</li>
+            <li>門票資訊:免費</li>
+            
+</ul>     
+             
+	</div>
+
+        
+             
+         
+ 
+        
+      
+    
+    
+ </div>    
+     </section>
+    
+    
+    <section id="section2" >
+    
+     <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>孔廟</h1>
+         <p >孔廟是中國古代儒家文化的象徵，府城及縣城必興建孔廟，以代表中華文化。廟前有【大成殿】匾額，廟內主祀至聖先師孔子神位，陪祀顏子、子思、子路等七十二位弟子神位。
+             孔廟裝飾簡樸典雅，表現莊重肅穆之美，每逢祀宜典禮，鐘鼓齊鳴，有舞有樂，行祀如儀，充份展現中華文化的優良傳承。但因日治時代因被破壞，殘存古物不多，只有大成殿左側的
+             【重修文廟碑記】是嘉慶二十年留下的最古遺跡，字跡還算清楚，但碑可因年代久遠而佈滿苔痕。</p>
+         
+             <div class="photo"><img src="https://travel.chiayi.gov.tw/upload/travels/b8a8ed587b345b745234cb7970a256a3.jpg" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　<li>電話 (05)229-4593</li>
+　<li>地址:嘉義市東區民權路122號</li>
+　
+<li>開放時星期日：24小時營業</li>
+            <li>星期一：24小時營業</li>
+            <li>星期二：24小時營業</li>
+            <li>星期三：24小時營業</li>
+            <li>星期四：24小時營業</li>
+                      
+ <li>星期五：24小時營業</li>
+            <li>星期六：24小時營業</li>
+            <li>門票資訊:免費</li>
+            
+            
+</ul>     
+                      
+	</div>
+
+        
+             
+         
+ 
+        
+      
+    
+    
+ </div> 
+     </section>
+     
+    
+    
+     <section id="section3" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>嘉義城隍廟</h1>
+       <p >城隍廟於康熙五十四年(西元1715年)創建。雍正十年(西元1732年)重修。及至乾隆二十九年，因廟身傾圯斑駁，有折崩之虞，新任邑宰張所受加工予以重修。現今城隍廟為泉州溪底派匠師王錦木主司重建，建築富麗，格局尊貴，對木雕藝術表現深具特色，拜殿之八卦藻井，正殿步口及次間看架斗栱，全由榫卯鬥成，不用一釘一鐵，匠藝巧奪天工。城隍廟保存清領時期之碑匾文物十餘件，彌足珍貴，包括全台城隍廟唯一獲皇帝賜匾的「臺洋顯佑」匾，太子太保王得祿獻「道宏化育」匾，知縣張所受立「重建城隍廟」碑，知縣范學恆為供香燈之資而立碑， 晉江龔道南獻大算盤，知縣王廷幹為興築陰靈堂而立碑，教諭蘇鳳藻獻「赫聲濯靈」匾，台澎掛印總鎮章高元率參將周立得等獻「除暴安良」匾等計 11件，彌足珍貴。為泉州溪底派匠師王錦木主司重建，具傳統建築特色，是典型的街屋式廟宇配置，建築規制富麗，三川殿精緻大方，拜殿裝飾巧奪天工，正殿莊嚴肅穆，格局尊貴，呈現空間秩序的美感。位於拜殿水車堵，左右兩面各有細膩傳神的交趾陶傑作，係陳專友和林添木兩位大師〝拚場〞之作品，藝術價值非凡。門神彩繪為名匠陳玉峰創作， 廟中神像，脊飾、彩繪、石雕、門神、木雕等做工精美。
+
+
+</p>
+        
+             <div class="photo"><img src="https://travel.chiayi.gov.tw/upload/travels/15aff5d5a489c638b638d9622506230a.jpg" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話: (05)222-4116</li>
+　<li>地址:嘉義市東區吳鳳北路168號</li>
+　
+<li>開放時星期日：6:00-22:00</li>
+            <li>星期一：06:00–22:00</li>
+            <li>星期二：06:00–22:00</li>
+            <li>星期三：06:00–22:00</li>
+            <li>星期四：06:00–22:00</li>
+                      
+ <li>星期五：06:00–22:00</li>
+            <li>星期六：06:00–22:00</li>
+            <li>門票資訊:免費</li>
+</ul>     
+                      
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+    
+    
+    <section id="section4" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>嘉義蘇周連宗祠</h1>
+       <p >本宗祠是嘉義市現存最早設立之祠堂，作為大嘉義地區蘇氏祭祖與宗親聯誼，已歷百年之久，具有宗族發展歷史的研究價值，且常年維持祭祀活動，可啟發宗親思源尋根，具有深厚的文化意涵。民間有言：「嘉義蘇氏半嘉城」，蘇氏族人蘇孝德、蘇育奇曾任嘉義區長，開設美記商行，頗有名氣，與嘉義市的政治、經濟、文化發展關係密切。 為倡導尊祖敬宗，本宗祠於日治之初成立，並從蘇氏家廟發展成蘇、周、連三姓的共同祠堂。祠內安奉蘇周連神位及蘇氏先祖考取進士，受封位之神位 31尊，及蘇氏救命恩公洪公祖之特殊神位。本建築為豪華民宅改建為祠堂之範例，屬傳統閩南風格，格式保存良好，全棟五開間，一進式三合院，中堂未使用一釘一鐵，門楣之木雕及彩繪精美，木構窗戶開啟設計特殊，步口廊、穿斗式屋架，簷下吊筒間以弓形方樑互拉，樑及椼引之間，每一開間再做出兩組斗座草，較為少見，各項做工精緻細膩，具有藝術價值。
+
+
+</p>
+        
+             <div class="photo"><img src="https://travel.chiayi.gov.tw/upload/travels/820d6b7dd31581b3a3be47230ae1449c.jpg" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:886-5-2719346</li>
+　<li>地址:600嘉義市東區垂楊路326號</li>
+　
+<li>開放時星期日：星期日	09:00–17:00</li>
+            <li>星期一：休息</li>
+            <li>星期二：休息</li>
+            <li>星期三：09:00–17:00</li>
+            <li>星期四：09:00–17:00</li>
+                      
+ <li>星期五：09:00–17:00</li>
+            <li>星期六：09:00–17:00</li>
+           
+</ul>     
+                 
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+   
+    <section id="section5" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>紅毛井</h1>
+       <p style="position: relative;left: 0px;" >此井為三百年前荷蘭人所鑿，故稱【蘭井】，因荷蘭人頭髮為紅色，又稱【紅毛井】。西元1636年，明崇禎九年，荷蘭東印度公降服諸羅山社後不久，約在清領後的縣署處，派駐政務員及牧師，以徵放諸羅山一帶平埔族人、漢人的租稅，並傳布基督教於原住民，遂挖鑿此井，以為居家生活所需要的水源。鄭氏時期，吳智武總兵鎮守並屯田於諸羅山，設營於此井北，重修之，清領之後未有整修記載，乾隆二十七年，諸羅知縣衛克堉以此井迫水甘美，冠於全諸羅山，列【蘭井泉甘】為諸羅八景之一，清領未期嘉義進士徐德欽，以此井泉水，「清滌襟煩同玉醁，甘回舌本勝瓊漿，茶烹合用銀壺貯，綆汲誰偕雪水量。」為嘉義諸迫之冠。文獻記載：「紅毛井，在縣署之左。開自荷蘭，因以名。方廣六尺，深二丈許，泉甘洌於他井，相傳居民汲飲是井，則不犯疫癘。鄭氏時，有吳智武者鎮守斯地，重修之。」「蘭井泉甘」曾列為諸羅八景之一。民國七十四年內政部古蹟評鑑以前，暫將此地列為第三級古蹟保存，評鑑時，以井周環境髒亂，井欄又為五十九年新條，剔除古蹟之列，雖如此，紅毛井仍是嘉義市內年代最早的史蹟。
+
+
+</p>
+        
+             <div class="photo"><img src="https://travel.chiayi.gov.tw/upload/travels/1387d3b3dcb44e96990367fcad020bc4.jpg" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:886-5-2788225</li>
+　<li>地址:嘉義市東區蘭井街83號</li>
+　
+<li>開放時星期日：24小時營業</li>
+            <li>星期一：24小時營業</li>
+            <li>星期二：24小時營業</li>
+            <li>星期三：24小時營業</li>
+            <li>星期四：24小時營業</li>
+                      
+ <li>星期五：24小時營業</li>
+            <li>星期六：24小時營業</li>
+            <li>門票資訊:免費</li>
+</ul>     
+                       
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+    
+    <section id="section6" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>九華山地藏庵</h1>
+       <p>
+
+          地藏庵正殿主祀地藏王菩薩，大雄寶殿主祀釋迦牟尼佛，並於前庭設置太歲殿及文昌殿；大悲殿主祀觀世音菩薩，彌陀殿主祀阿彌陀佛，藥師殿祀藥師佛，頂樓大願殿奉祀四尊南無大願地藏王菩薩。 
+           鎮殿地藏王菩薩據傳為交趾陶大師葉王的創作，寶相莊嚴慈悲，神恩浩蕩，由於常顯靈助人，保佑鄉里，護民有術，遂成為最重要的信仰中心。年度法會有上元法會、中元法會和下元法會，參與人數每
+           次均上萬人，十分的隆盛。地藏庵香火鼎盛，經常辦理慈善救濟，普渡眾生，撫慰民心。廟內鎮殿地藏王菩薩神像，以及十殿閻羅神像都是古物，極具價值。
+
+
+
+
+</p>
+        
+             <div class="photo"><img src="https://travel.chiayi.gov.tw/upload/travels/cc449a734e781000d29df02b18792802.jpg" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話: (05)278-2555</li>
+　<li>地址:嘉義市東區民權路255號</li>
+　
+<li>開放時星期日：06:00 – 21:30</li>
+            <li>星期一：06:00 – 21:30</li>
+            <li>星期二：06:00 – 21:30</li>
+            <li>星期三：06:00 – 21:30</li>
+            <li>星期四：06:00 – 21:30</li>
+                      
+ <li>星期五：06:00 – 21:30</li>
+            <li>星期六：06:00 – 21:30</li>
+            <li>門票資訊:免費</li>
+</ul>     
+                      
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
