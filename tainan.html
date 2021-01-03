@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>台南古蹟</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <style>
+      .head{
+            background-color: antiquewhite;color: black;font-weight: bold;font-size: 30px;
+            text-align: center;padding: 10px;
+                   
+        }
+      
+
+        body {
+            background-image: url(https://cestmarie.com/wp-content/uploads/2019/01/Screenshot-3.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+ 
+ p { 
+    
+    line-height: 40px;　　　          　/* 設定文字行距 */
+   
+}
+
+       
+       .fix{
+  width:60px;
+  height:30px;
+  border:1px solid #000;
+  position:fixed;
+  top:65px;
+  right:0px;
+  background-color: azure;
+}
+    .container{
+  width: 900px;
+  margin: 0 auto;
+}
+.card{
+  /* 設定父親定位點 */
+  position: relative;
+  width: 270px;
+  
+  float:left;
+  margin: 15px;
+}
+img{
+  display: block;
+  width: 270px;
+  height:200px;  
+
+}
+.info{
+/*   display: none; */
+  opacity: 0;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.3);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.info:hover{
+  -webkit-transition: 500ms;
+  opacity: 1;
+}
+    
+    .photo{
+    float:right;
+    width:50%;
+}
+.intro{
+    float:left;
+    width:50%;
+}
+    
+    .info a{
+  color: #fff;
+  font-size:18px;
+}
+   
+    .toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+ 
+/* 48px */
+.toTop-arrow {
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 25px;
+	height: 6px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.42rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.42rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+/* 56px */
+.toTop-arrow {
+	width: 3.5rem;
+	height: 3.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 31px;
+	height: 7px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.4rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.4rem;
+}
+.toTop-arrow:focus {outline: none;}
+    
+    
+    
+    </style>
+    
+    
+    
+    </head>
+
+<body>
+   <button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+</script>
+    
+    
+    <a class="fix" href="index.html">回首頁</a>
+    <div class="head">台南古蹟</div> 
+  
+    
+   <div class="container">
+   
+  <div class="card">
+    <img src="https://www.twtainan.net/image/13951/1024x768" alt="">
+    <div class="info">
+     <a  href="#section5">赤崁樓</a>   
+
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://www.twtainan.net/image/17821/1024x768" alt="">
+    <div class="info">
+    <a  href="#section4">德記洋行</a> 
+      
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://www.twtainan.net/image/18149/1024x768" alt="">
+    <div class="info">
+     <a  href="#section3">億載金城 </a> 
+      
+    </div>
+  </div>
+   <div class="card">
+    <img src="https://www.twtainan.net/image/17552/1024x768" alt="">
+    <div class="info">
+     <a   style="color: aliceblue;"  href="#section2">台南孔廟</a> 
+     
+    </div>
+  </div>
+  
+         <div class="card">
+    <img src="https://www.twtainan.net/image/17684/1024x768" alt="">
+    <div class="info">
+     <a  href="#section1">延平郡王祠</a>
+      
+    </div>
+  </div>
+         <div class="card">
+    <img src="https://www.twtainan.net/image/17447/1024x768" alt="">
+    <div class="info">
+     <a  href="#section6">安平古堡</a> 
+     
+    </div>
+  </div>
+         </div>
+  
+  
+   
+    <section id="section1" >
+    
+    <div  class="container">
+    
+         
+     
+         <hr>
+       <h1>延平郡王祠</h1>
+        <p >在開山路與府前路口，騎在馬背上的延平郡王石雕總是威風凜凜的望著前方，像是台南市守護神一樣的存在每個人的心中，延平郡王祠是座紅色融合些日式氣息的福州式建築，
+            每天總是迎來許多遊客，穿梭在寫著「前無古人」的三川門牌之下，延平郡王祠內的四扇門面繪製的八個門神，如果仔細看，都是藍眼睛白皮膚的外國樣貌，是因為感念鄭成功趕走荷蘭人
+            ，而讓洋人穿著明朝官袍繼續為他駐守廟堂門口，也成為一個有趣的景象。</p>
+         
+             <div class="photo"><img src="https://www.twtainan.net/image/17684/1024x768" style=" width:540px ; height:400px ;"  ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　<li>電話:+886-6-2135518</li>
+　<li>地址:臺南市中西區開山路152號</li>
+<li>開放時星期日：星期日	08:30 – 17:30</li>
+            <li>星期一：08:30 – 17:30</li>
+            <li>星期二：08:30 – 17:30</li>
+            <li>星期三：08:30 – 17:30</li>
+            <li>星期四：08:30 – 17:30</li>
+                      
+ <li>星期五：08:30 – 17:30</li>
+            <li>門票資訊:免費</li>
+            
+</ul>     
+             
+	</div>
+
+        
+             
+         
+ 
+        
+      
+    
+    
+ </div>    
+     </section>
+    
+    
+    <section id="section2" >
+    
+     <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>台南孔廟</h1>
+         <p >已有三百多年歷史的「全臺首學」台南孔廟，可說是台南為文化古都的核心，南門路上綿延的紅牆在穿透樹梢的陽光下顯得神聖，也呈現著台南古都的獨特韻味，
+             以歷史悠久的孔廟為中心，串聯起舊街區並連接附近主要的古蹟點，大南門、府中街、延平郡王祠等，是一個可以穿街走巷盡情享受古城氛圍的文化園區。</p>
+         
+             <div class="photo"><img src="https://www.twtainan.net/image/17552/1024x768" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　<li>電話 +886-6-2214647</li>
+　<li>地址:臺南市中西區南門路2號</li>
+　
+<li>開放時星期日：星期日	08:30 – 17:30</li>
+            <li>星期一：08:30 – 17:30</li>
+            <li>星期二：08:30 – 17:30</li>
+            <li>星期三：08:30 – 17:30</li>
+            <li>星期四：08:30 – 17:30</li>
+                      
+ <li>星期五：08:30 – 17:30</li>
+            <li>星期六：08:30 – 17:30</li>
+          
+            
+</ul>     
+                      
+	</div>
+
+        
+             
+         
+ 
+        
+      
+    
+    
+ </div> 
+     </section>
+     
+    
+    
+     <section id="section3" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>億載金城 </h1>
+       <p >億載金城又名「二鯤鯓砲台」，是一個四方型四周有稜堡且有護城河圍繞的紅色城堡，中央處的草皮則是當時用來操練士兵的所在地，從地圖上看是一個非常勻稱的菱形設計，隨著歷史演進，
+           億載金城已失去軍事據點的作用，轉變為相當受歡迎的景點，假日偶有穿著清兵服裝的工作人員在砲台上演練著砲操，有如時光倒流的場景讓許多遊客驚喜不已，三-四月周邊黃花風鈴木盛開
+           時更是絕美，常可見遊客踩踏著天鵝船在護城河中緩緩前進，與生活在此的野鴨及天鵝一同在水域裡嬉戲著。
+
+
+</p>
+        
+             <div class="photo"><img src="https://travel.chiayi.gov.tw/upload/travels/15aff5d5a489c638b638d9622506230a.jpg" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話: +886-6-2951504</li>
+　<li>地址:臺南市安平區光州路3號</li>
+　
+<li>開放時星期日：星期日	08:30 – 17:30</li>
+            <li>星期一：08:30 – 17:30</li>
+            <li>星期二：08:30 – 17:30</li>
+            <li>星期三：08:30 – 17:30</li>
+            <li>星期四：08:30 – 17:30</li>
+                      
+ <li>星期五：08:30 – 17:30</li>
+            <li>星期六：08:30 – 17:30</li>
+            <li>門票資訊:全票:50 半票:25</li>
+</ul>     
+                      
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+    
+    
+    <section id="section4" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>德記洋行</h1>
+       <p >位在安平樹屋旁，有著純白色外觀的洋式建築就是英商德記洋行，是英商德記洋行在安平開港後於台南安平所設立的據點，為當時的五大洋行之一，早期港運尚能通行時，
+           位在港邊的德記洋行主要業務是出口糖、樟腦與茶葉，並輸入鴉片，是繁盛一時的重要商業據點。現今德記洋行早已失去商業的功能，改規劃為台灣開拓史料蠟像館以蠟像展出
+           台灣早期生活樣貌；台灣開拓史料蠟像館在2001年規劃了時空走廊，將德記洋行的歷史、成長軌跡在此詳細展示。
+
+
+</p>
+        
+             <div class="photo"><img src="https://www.twtainan.net/image/17821/1024x768" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:+886-6-3913901</li>
+　<li>地址:臺南市安平區古堡街108號</li>
+　
+<li>開放時星期日：星期日	08:30 – 17:30</li>
+            <li>星期一：08:30 – 17:30</li>
+            <li>星期二：08:30 – 17:30</li>
+            <li>星期三：08:30 – 17:30</li>
+            <li>星期四：08:30 – 17:30</li>
+                      
+ <li>星期五：08:30 – 17:30</li>
+            <li>星期六：08:30 – 17:30</li>
+            <li>門票資訊:全票:50 半票:25</li>
+</ul>     
+                 
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+   
+    <section id="section5" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>赤崁樓</h1>
+       <p style="position: relative;left: 0px;" >1赤嵌樓可說是台南中西區內最主要的古蹟建築，與安平的安平古堡是台南的兩大明星，1652年荷蘭人在此建立普羅民遮城，
+           至此奠定了台南行政商業中心的位置，歷經300多年來幾經整修改建，始有現今的樣貌，內有海神廟、文昌閣及蓬壺書院，外圍草皮上立著國姓爺受降的雕像，總是讓國內外遊客仔細端詳，
+           遙想著當年國姓爺的英姿煥發，最吸引目光的莫過於移自大南門城邊的9塊御碑，由狀似石龜的贔屭所乘載，傳說贔屭為九龍生子之一，生性喜歡負重，也因為贔屭而讓赤嵌樓增添不少傳說故事，
+           至今仍讓人津津樂道。
+
+
+
+</p>
+        
+             <div class="photo"><img src="https://www.twtainan.net/image/13951/1024x768" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:+886-6-2205647</li>
+　<li>地址:臺南市中西區民族路二段212號</li>
+　
+<li>開放時星期日：8:30-21:30</li>
+            <li>星期一：8:30-21:30</li>
+            <li>星期二：8:30-21:30</li>
+            <li>星期三：8:30-21:30</li>
+            <li>星期四：8:30-21:30</li>
+                      
+ <li>星期五：8:30-21:30</li>
+            <li>星期六：8:30-21:30</li>
+            <li>門票資訊:全票:50 半票:25</li>
+</ul>     
+                       
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+    
+    <section id="section6" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>安平古堡</h1>
+       <p>
+
+          17世紀初荷蘭人以軍商結合的隊伍，於1624年占領今日安平，並建熱蘭遮城為其防禦要塞，全部工程完成於1634年。1662年鄭成功取荷蘭城後，改稱安平鎮，改內城為內府，臺人因此稱其為王城。
+           清領時代，因台江陸浮失卻其重要性，加上清兵破壞熱蘭遮城建億載金城，故日漸荒廢。日治後重建，二戰後乃稱「安平古堡」。目前真正的荷蘭時期遺跡僅存古堡前方外城南城垣的磚牆。
+           老榕盤根，無限滄桑，見證著盡400年來的台江的歷史。1975年配合觀光年計畫，台南市政府整修安平古堡範圍環境，在瞭望台上加一尖型屋頂，牆面漆成白色，就是現在我們看見的安平古堡的模樣。​
+
+
+
+</p>
+        
+             <div class="photo"><img src="https://www.twtainan.net/image/17447/1024x768" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話: +886-6-2267348</li>
+　<li>地址:臺南市安平區國勝路82號</li>
+　
+<li>開放時星期日：08:30 – 20:00</li>
+            <li>星期一：08:30 – 17:30</li>
+            <li>星期二：08:30 – 17:30</li>
+            <li>星期三：08:30 – 17:30</li>
+            <li>星期四：08:30 – 17:30</li>
+                      
+ <li>星期五：08:30 – 20:00</li>
+            <li>星期六：08:30 – 20:00</li>
+            <li>門票資訊:全票:50 半票:25</li>
+</ul>     
+                      
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
