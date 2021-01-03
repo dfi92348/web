@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>金門古蹟</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <style>
+      .head{
+            background-color: antiquewhite;color: black;font-weight: bold;font-size: 30px;
+            text-align: center;padding: 10px;
+                   
+        }
+      
+
+        body {
+            background-image: url(https://cestmarie.com/wp-content/uploads/2019/01/Screenshot-3.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+ 
+ p { 
+    
+    line-height: 40px;　　　          　/* 設定文字行距 */
+   
+}
+
+    .container{
+  width: 900px;
+  margin: 0 auto;
+}
+.card{
+  /* 設定父親定位點 */
+  position: relative;
+  width: 270px;
+  
+  float:left;
+  margin: 15px;
+}
+img{
+  display: block;
+  width: 270px;
+  height:200px;  
+
+}
+.info{
+/*   display: none; */
+  opacity: 0;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.3);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.info:hover{
+  -webkit-transition: 500ms;
+  opacity: 1;
+}
+    
+    .photo{
+    float:right;
+    width:50%;
+}
+.intro{
+    float:left;
+    width:50%;
+}
+    
+    .info a{
+  color: #fff;
+  font-size:18px;
+}
+   
+    .toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+ 
+/* 48px */
+.toTop-arrow {
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 25px;
+	height: 6px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.42rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.42rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+/* 56px */
+.toTop-arrow {
+	width: 3.5rem;
+	height: 3.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 31px;
+	height: 7px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.4rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.4rem;
+}
+.toTop-arrow:focus {outline: none;}
+    
+      .fix{
+  width:60px;
+  height:30px;
+  border:1px solid #000;
+  position:fixed;
+  top:65px;
+  right:0px;
+  background-color: azure;
+}
+    
+    </style>
+    
+    
+    
+    </head>
+
+<body>
+   <button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+</script>
+    
+     <a class="fix" href="index.html">回首頁</a>
+    
+    <div class="head">金門古蹟</div> 
+  
+    
+   <div class="container">
+   
+  <div class="card">
+    <img src="https://i0.wp.com/www.daisyyohoho.com/wp-content/uploads/2020/10/kinmen-16.jpg" alt="">
+    <div class="info">
+     <a  href="#section5">邱良功母節孝坊</a>   
+
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://kinmen.travel/image/9617/1024x768" alt="">
+    <div class="info">
+    <a  href="#section4">山后民俗文化村</a> 
+      
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://kinmen.travel/image/16661/1024x768" alt="">
+    <div class="info">
+     <a  href="#section3">清金門鎮總兵署</a> 
+      
+    </div>
+  </div>
+   <div class="card">
+    <img src="https://kinmen.travel/image/2024/1024x768" alt="">
+    <div class="info">
+     <a   style="color: aliceblue;"  href="#section2">水頭聚落</a> 
+     
+    </div>
+  </div>
+  
+         <div class="card">
+    <img src="https://kinmen.travel/image/10268/1024x768" alt="">
+    <div class="info">
+     <a  href="#section1">陳景蘭洋樓</a>
+      
+    </div>
+  </div>
+         <div class="card">
+    <img src="https://kinmen.travel/image/9600/1024x768" alt="">
+    <div class="info">
+     <a  href="#section6">莒光樓</a> 
+     
+    </div>
+  </div>
+         </div>
+  
+  
+   
+    <section id="section1" >
+    
+    <div  class="container">
+    
+         
+     
+         <hr>
+       <h1>陳景蘭洋樓</h1>
+        <p >這是金門旅居新加坡僑商陳景蘭於公元1921年興建的洋樓宅第，也是金門規模最大的一棟洋樓，是金門華僑回鄉興建「番仔樓」
+        代表作。淨白色的外觀讓陳景蘭洋樓多添了些洋味，精緻的雕花與對稱拱門，猶如西洋建築的工法，是陳景蘭洋樓最令人印象深
+        刻的部份。西元1949年後，陳景蘭洋樓曾被國軍防砲部隊駐紮，也曾作過軍醫院、金門中學校舍及官兵休假中心使用，現在轉為
+       遊客來到金門必訪的景點，是展示金門華僑史與洋樓建築的館舍。陳景蘭洋樓的正前方就是金湯公園，中央立有一座自由女神，
+       和洋樓的氣質相互交會，顯得高貴大方，附近的成功海灘與坑道，可以融入你參訪行程中的一部分。</p>
+         
+             <div class="photo"><img src="https://kinmen.travel/image/10268/1024x768" style=" width:540px ; height:400px ;"  ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　<li>電話:+886-82-332528</li>
+　<li>地址:金門縣金湖鎮正義里成功村1號</li>
+　<li>開放時星期日：09:00–17:00</li>
+<li>開放時星期日：09:00–17:00</li>
+            <li>星期一：09:00–17:00</li>
+            <li>星期二：09:00–17:00</li>
+            <li>星期三：09:00–17:00</li>
+            <li>星期四：09:00–17:00</li>
+                      
+ <li>星期五：09:00–17:00</li>
+            <li>星期六：09:00–17:00</li>
+            <li>門票資訊:免費</li>
+            
+</ul>     
+             
+	</div>
+
+        
+             
+         
+ 
+        
+      
+    
+    
+ </div>    
+     </section>
+    
+    
+    <section id="section2" >
+    
+     <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>水頭聚落</h1>
+         <p >水頭又名金水，位於金城鎮的西南隅，是個以黃姓為主的多姓聚落，因鄰近水頭碼口，早期即為金門與廈門之間的交通要點。
+         水頭在過去是相當富有的聚落，保存的閩式建築與洋樓，是全島最多、最精美。得月樓、金水國小、僑鄉文化展示館等建築，
+         都別具特色金門。金門俗諺「有水頭富，無水頭厝」，意思是即使能像水頭村人一樣富裕，但要擁有像水頭村那樣華麗的房舍卻
+         不容易，代表著金門人賦予水頭聚落建築的讚譽。水頭村民過去除了以農、漁業維生外，也多從事走船經商，因此，聚落裡錯落
+         著傳統閩南古厝與受到海外風情影響的異國洋樓。閩南傳統聚落有：清乾隆時期所興建的黃氏大宗祠、黃濟古厝、頂界
+         「十八支樑」（九棟二落大厝）等。清中葉以後，大量金門僑民匯款回鄉興建的學校（金水學校）、銃樓（得月樓）等設計講究
+        的洋樓；水頭彷彿是歷史建築的展場，也是金門保留最完善的傳統大聚落。</p>
+         
+             <div class="photo"><img src="https://kinmen.travel/image/2024/1024x768" style=" width:540px ; height:370px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　<li>電話:+886-82-313282</li>
+　<li>地址:金門縣金城鎮前水頭</li>
+　
+<li>開放時星期日：24小時營業</li>
+            <li>星期一：24小時營業</li>
+            <li>星期二：24小時營業</li>
+            <li>星期三：24小時營業</li>
+            <li>星期四：24小時營業</li>
+                      
+ <li>星期五：24小時營業</li>
+            <li>星期六：24小時營業</li>
+            <li>門票資訊:免費</li>
+            
+            
+</ul>     
+                      
+	</div>
+
+        
+             
+         
+ 
+        
+      
+    
+    
+ </div> 
+     </section>
+     
+    
+    
+     <section id="section3" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>清金門鎮總兵署</h1>
+       <p >清金門鎮總兵署所在地原為「叢青軒」，相傳是明萬曆辛丑年(西元1601)進士許獬讀書的地方，康熙年間，總兵陳龍考量舊金門城經歷明末多次兵禍，而后浦人丁興旺，於是將總兵署遷建於此，多次改建後成為現在規模，直到1915年金門設縣，總兵署仍為最高行政中心，歷經金門縣公署、金門縣政府、行政公署、金門防衛部……等等，現在則是金門經典的觀光景點，也是縣定古跡之一
+       踏入這四進兩廊式的四合院建築，時間彷彿向過去流轉，清衙門完整地保留，衙門口、大堂、內署明間以臘像重現昔日意象，各間室都有詳盡的文字說明。
+       而後院那棵參天的木棉古樹是絕不能錯過的，樹齡已逾數百，每逢春末夏初花期開著滿樹鮮豔的木棉花，總吸引大批攝影好手前來，以鮮豔的橙花，替總兵署增添意境
+
+
+</p>
+        
+             <div class="photo"><img src="https://kinmen.travel/image/2024/1024x768" style=" width:540px ; height:370px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:+886-82-371717</li>
+　<li>地址:金門縣金城鎮浯江街53號</li>
+　
+<li>開放時星期日：09:00–22:00</li>
+            <li>星期一：09:00–22:00</li>
+            <li>星期二：09:00–22:00</li>
+            <li>星期三：09:00–22:00</li>
+            <li>星期四：09:00–22:00</li>
+                      
+ <li>星期五：09:00–22:00</li>
+            <li>星期六：09:00–22:00</li>
+            <li>門票資訊:免費</li>
+</ul>     
+                      
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+    
+    
+    <section id="section4" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>山后民俗文化村</h1>
+       <p >完成於清光緒26年(西元1900年)，為旅日僑領王國珍、王敬祥父子經商有成，號召族人闢建而成，佔地相當廣闊，包括16棟閩南傳統二進式建築，1棟學堂建築及1棟王氏宗祠共18棟，合稱為「十八間」。
+這18棟屋邸全都依山面海，格局、型式、排列工整一致，整齊劃一，配合彩繪、石雕、磚雕、交陶裝飾，精緻的建築風貌，展現傳統建築的工藝技術，更藉由四周隘門防禦，形成嚴密自衛空間，以防盜匪侵襲，說是金門閩南建築的代表作也不為過。
+目前利用原有房子規劃了禮儀、喜慶、武館等主題館，展出往日的文物，讓遊客們踏入金門的歷史。
+
+
+</p>
+        
+             <div class="photo"><img src="https://kinmen.travel/image/9617/1024x768" style=" width:540px ; height:370px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:+886-82-354441</li>
+　<li>地址:金門縣金沙鎮山后民俗文化村</li>
+　
+<li>開放時星期日：08:00–17:00</li>
+            <li>星期一：08:00–17:00</li>
+            <li>星期二：08:00–17:00</li>
+            <li>星期三：08:00–17:00</li>
+            <li>星期四：08:00–17:00</li>
+                      
+ <li>星期五：08:00–17:00</li>
+            <li>星期六：08:00–17:00</li>
+            <li>門票資訊:免費</li>
+</ul>     
+                 
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+   
+    <section id="section5" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>邱良功母節孝坊</h1>
+       <p style="position: relative;left: 0px;" >邱良功的母親許氏，是清朝振威將軍邱志仁之妻，在邱良功滿月不久，父親邱志仁就與世長辭，當時年紀尚輕的許氏，辛苦地把剛滿月的邱良功撫養長大。
+邱良功成年後投身軍旅，從基層軍人累昇至將軍，嘉慶十四年邱良功升任浙江水陸提督後，奏請皇帝表揚母親許氏，獲仁宗皇帝嘉許，誥贈邱母為一品太夫人，並建坊表彰其守節撫孤教子之功。
+這座牌坊建於西元1812年，以高級的花崗石與青斗石建造，細膩的雕刻記錄著邱良功功成名就返鄉的情節，還有名人題刻的對聯，令人留下深刻的印象！
+
+
+
+</p>
+        
+             <div class="photo"><img src="https://i0.wp.com/www.daisyyohoho.com/wp-content/uploads/2020/10/kinmen-16.jpg" style=" width:540px ; height:370px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:+886-82-328638</li>
+　<li>地址:金門縣金城鎮東門里莒光路一段觀音亭旁</li>
+　
+<li>開放時星期日：24小時營業</li>
+            <li>星期一：24小時營業</li>
+            <li>星期二：24小時營業</li>
+            <li>星期三：24小時營業</li>
+            <li>星期四：24小時營業</li>
+                      
+ <li>星期五：24小時營業</li>
+            <li>星期六：24小時營業</li>
+            <li>門票資訊:免費</li>
+</ul>     
+                       
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+    
+    <section id="section6" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>莒光樓</h1>
+       <p>
+
+這座建築建於西元1952
+
+自西元1959~64年間，莒光樓四度被中華民國郵政總局做為郵票的主題，郵件遍及海內外，與「毋忘在莒」勒石同樣成為戰地金門著名的地標性建築，也是當時金門的最佳代言人。
+
+
+</p>
+        
+             <div class="photo"><img src="https://kinmen.travel/image/9600/1024x768" style=" width:540px ; height:370px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:+886-82-325632</li>
+　<li>地址:金門縣金城鎮賢城路1號</li>
+　
+<li>開放時星期日：08:00 – 22:00</li>
+            <li>星期一：08:00 – 22:00</li>
+            <li>星期二：08:00 – 22:00</li>
+            <li>星期三：08:00 – 22:00</li>
+            <li>星期四：08:00 – 22:00</li>
+                      
+ <li>星期五：08:00 – 22:00</li>
+            <li>星期六：08:00 – 22:00</li>
+            <li>門票資訊:免費</li>
+</ul>     
+                      
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
