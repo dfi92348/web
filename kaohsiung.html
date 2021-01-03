@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>高雄古蹟</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <style>
+      .head{
+            background-color: antiquewhite;color: black;font-weight: bold;font-size: 30px;
+            text-align: center;padding: 10px;
+                   
+        }
+      
+
+        body {
+            background-image: url(https://cestmarie.com/wp-content/uploads/2019/01/Screenshot-3.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+ 
+ p { 
+    
+    line-height: 40px;　　　          　/* 設定文字行距 */
+   
+}
+
+       .fix{
+  width:60px;
+  height:30px;
+  
+  position:fixed;
+  top:65px;
+  right:0px;
+  background-color: beige ;
+}
+       
+    .container{
+  width: 900px;
+  margin: 0 auto;
+}
+.card{
+  /* 設定父親定位點 */
+  position: relative;
+  width: 270px;
+  
+  float:left;
+  margin: 15px;
+}
+img{
+  display: block;
+  width: 270px;
+  height:200px;  
+
+}
+.info{
+/*   display: none; */
+  opacity: 0;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.3);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.info:hover{
+  -webkit-transition: 500ms;
+  opacity: 1;
+}
+    
+    .photo{
+    float:right;
+    width:50%;
+}
+.intro{
+    float:left;
+    width:50%;
+}
+    
+    .info a{
+  color: #fff;
+  font-size:18px;
+}
+   
+    .toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+ 
+/* 48px */
+.toTop-arrow {
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 25px;
+	height: 6px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.42rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.42rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+/* 56px */
+.toTop-arrow {
+	width: 3.5rem;
+	height: 3.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 31px;
+	height: 7px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.4rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.4rem;
+}
+.toTop-arrow:focus {outline: none;}
+    
+    
+    
+    </style>
+    
+    
+    
+    </head>
+
+<body>
+   <button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+</script>
+    
+    <a class="fix" href="index.html">回首頁</a>
+    
+    <div class="head">高雄古蹟</div> 
+  
+    
+   <div class="container">
+   
+  <div class="card">
+    <img src="https://www.taiwan.net.tw/pic.ashx?qp=1/big_scenic_spots/pic_R119_1.jpg&sizetype=3" alt="">
+    <div class="info">
+     <a  href="#section5">高雄市立歷史博物館</a>   
+
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://fongyiacademy.khcc.gov.tw/PhotoData/44.jpg" alt="">
+    <div class="info">
+    <a  href="#section4">鳳儀書院</a> 
+      
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://khh.travel/image/460/?r=1590480804728" alt="">
+    <div class="info">
+     <a  href="#section3">鳳山縣舊城 </a> 
+      
+    </div>
+  </div>
+   <div class="card">
+    <img src="https://khh.travel/image/832/1024x768" alt="">
+    <div class="info">
+     <a   style="color: aliceblue;"  href="#section2">旗后砲台</a> 
+     
+    </div>
+  </div>
+  
+         <div class="card">
+    <img src="https://khh.travel/image/1121/1024x768" alt="">
+    <div class="info">
+     <a  href="#section1">旗后燈塔</a>
+      
+    </div>
+  </div>
+         <div class="card">
+    <img src="https://www.taiwan.net.tw/pic.ashx?qp=1/big_scenic_spots/pic_440_2.jpg&sizetype=3" alt="">
+    <div class="info">
+     <a  href="#section6">打狗英國領事館</a> 
+     
+    </div>
+  </div>
+         </div>
+  
+  
+   
+    <section id="section1" >
+    
+    <div  class="container">
+    
+         
+     
+         <hr>
+       <h1>旗后燈塔</h1>
+        <p >雄踞旗后山頂，以雪白耀眼之姿守護高雄港的旗后燈塔是港都的象徵。1860年英法聯軍之役後臺灣開放打狗港(高雄港)通商，船隻通行日漸繁多，直至1883年英國人建立方型磚造
+            燈塔供船隻安全照明使用，日治時期又在1918年於原塔旁興建八角型圓頂磚塔，白底黑頂、外有環繞陽台，塔高15.2公尺非常醒目耀眼。旗后燈塔自建立至今已有百年歷史，從無間
+            斷地照耀海上的船隻，確保航海安全，歷史意義與重要地位使它成為國家三級古蹟。旗后燈塔簡潔美麗的建築是無可取代的港都歷史文化意象，其位於旗后山上的壯闊視野讓臺灣海峽與
+            高雄市區景緻一覽無遺，俯瞰海岸大船入港榮景及燦爛的金色夕照，懷想港都悠悠百年歲月，是趟抒情美麗的文化旅行。</p>
+         
+             <div class="photo"><img src="https://khh.travel/image/1121/1024x768" style=" width:500px ; height:250px ;"  ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　<li>電話:+886-7-5715021</li>
+　<li>地址:高雄市旗津區旗下巷34號</li>
+            <li>11月至3月：09:00–17:00</li>
+            <li>4月至10月：09:00–18:00</li>
+            <li>(週一公休)</li>
+            
+         
+            
+</ul>     
+             
+	</div>
+
+        
+             
+         
+ 
+        
+      
+    
+    
+ </div>    
+     </section>
+    
+    
+    <section id="section2" >
+    
+     <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>旗后砲台</h1>
+         <p >旗津地區開發甚早，軍事地位十分重要，清康熙年間乃在旗后山頂興建砲台，主要負責鎮守高雄港。這座砲台營區建築多以紅磚建造，深具傳統中國風格，來到八字門八字牆，還能看到門楣上
+             「振震天南」四個大字，氣勢非凡。牆上磚砌相對的囍字，角落搭配蝙蝠刻紋，壁面、階梯面的許多傳統建築花樣，皆是中國風格的象徵，值得令人細細品味。</p>
+         
+             <div class="photo"><img src="https://khh.travel/image/832/1024x768" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　<li>電話 +886-7-2225136</li>
+　<li>地址:高雄市旗津區旗後山上</li>
+　
+<li>開放時星期日：24小時營業</li>
+            <li>星期一：24小時營業</li>
+            <li>星期二：24小時營業</li>
+            <li>星期三：24小時營業</li>
+            <li>星期四：24小時營業</li>
+                      
+ <li>星期五：24小時營業</li>
+            <li>星期六：24小時營業</li>
+            <li>門票資訊:免費</li>
+          
+            
+</ul>     
+                      
+	</div>
+
+        
+             
+         
+ 
+        
+      
+    
+    
+ </div> 
+     </section>
+     
+    
+    
+     <section id="section3" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>鳳山縣舊城 </h1>
+       <p >奠基於清朝康熙年間的鳳山縣舊城位於現在的左營區，是清朝政府統治臺灣後鳳山縣第一處縣城所在，也是臺灣第一座土造城牆。清朝乾隆年間林爽文事變舊城陷落，
+           政經勢力遷移至下埤頭街(今鳳山區)，是為鳳山新城。但新城因為盜賊亂事頻仍，不易防守，道光年間(1862年)又糾集官民力量，在舊城原址重建臺灣第一座石造堅固城池
+           ，為如今左營鳳山縣舊城。
+
+
+</p>
+        
+             <div class="photo"><img src="https://khh.travel/image/460/?r=1590480804728" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:+886-7-2225136</li>
+　<li>地址:高雄市左營區勝利路117號</li>
+　
+<li>開放時星期日：24小時營業</li>
+            <li>星期一：24小時營業</li>
+            <li>星期二：24小時營業</li>
+            <li>星期三：24小時營業</li>
+            <li>星期四：24小時營業</li>
+                      
+ <li>星期五：24小時營業</li>
+            <li>星期六：24小時營業</li>
+            <li>門票資訊:免費</li>
+</ul>     
+                      
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+    
+    
+    <section id="section4" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>鳳儀書院</h1>
+       <p >位在安平樹屋旁，有著純白色外觀的洋式建築就是英商德記洋行，是英商德記洋行在安平開港後於台南安平所設立的據點，為當時的五大洋行之一，早期港運尚能通行時，
+           位在港邊的德記洋行主要業務是出口糖、樟腦與茶葉，並輸入鴉片，是繁盛一時的重要商業據點。現今德記洋行早已失去商業的功能，改規劃為台灣開拓史料蠟像館以蠟像展出
+           台灣早期生活樣貌；台灣開拓史料蠟像館在2001年規劃了時空走廊，將德記洋行的歷史、成長軌跡在此詳細展示。
+
+
+</p>
+        
+             <div class="photo"><img src="https://fongyiacademy.khcc.gov.tw/PhotoData/44.jpg" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:(07)740-53621</li>
+　<li>地址:高雄市鳳山區鳳崗里鳳明街62號</li>
+　
+<li>開放時星期日：星期日	10：30-18：30</li>
+            <li>星期一：08:30 – 17:30</li>
+            <li>星期二：10：30-17：30</li>
+            <li>星期三：10：30-17：30</li>
+            <li>星期四：10：30-17：30</li>
+                      
+ <li>星期五：10：30-17：30</li>
+            <li>星期六：10：30-18：30</li>
+            <li>門票資訊:全票 NT$66元 優待票 NT$ 39元 優惠票 NT$ 25元</li>
+</ul>     
+                 
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+   
+    <section id="section5" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>高雄市立歷史博物館</h1>
+       <p style="position: relative;left: 0px;" >
+           高雄歷史博物館位於高雄市鹽埕區，在著名的高雄愛河邊，是由舊高雄市政府改建而成，於民國87年（西元1998年）正式開放。建築物本身興建於西元1938年，至今已有60年的歷史，
+           屬日治時期的晚期建築，當時為高雄市市役所及民國34年（西元1945年）二戰後的高雄市政府所在地，現今則是全臺灣第一座由地方政府籌建的博物館，並於民國87年（西元1998年）
+           10月25日正式開館。象徵高雄市在邁向21世紀海洋都市的努力中，特別要紀錄先民篳路藍縷、以啟山林的艱辛過程，期望透過高博館展示的珍貴文物和各項研究及推廣活動，讓更多的民眾
+           了解高雄市發展的軌跡，從緬懷過去進而策勵未來，高博館正肩負這莊嚴而神聖的任務。
+
+
+
+</p>
+        
+             <div class="photo"><img src="https://www.taiwan.net.tw/pic.ashx?qp=1/big_scenic_spots/pic_R119_1.jpg&sizetype=3" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:(07)531-2560</li>
+　<li>地址:高雄市鹽埕區中正四路272號</li>
+　
+<li>開放時星期日：9:00-17:00</li>
+            <li>星期一：休息</li>
+            <li>星期二：9:00-17:00</li>
+            <li>星期三：9:00-17:00</li>
+            <li>星期四：9:00-17:00</li>
+                      
+ <li>星期五：9:00-17:00</li>
+            <li>星期六：9:00-17:00</li>
+        
+</ul>     
+                       
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+    
+    <section id="section6" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>打狗英國領事館</h1>
+       <p>
+
+          建於西元1865年，至今已有150多年歷史，地理位置特殊，座落在海天一色的西子灣山上，可屬美景天成。坐靠打鼓山、前扼高雄港進出之大船、右看西子灣日落、左抱高雄市港全景。
+           本館為後文藝復興時代巴洛克式建築風格，花欄石雕、圓拱設計，她見證了一個半世紀的歷史，經整修後，風華再現，英領風騷；館內亦蘊藏豐富的藝術臻品，使其成為內外兼美的古蹟領事館。
+           這座英國式的建築，設計者為英國人，使用尺寸皆為英碼及英呎。四周的外牆有連續的半圓拱，轉角處的栱較小而牆柱較大，是力學上的強固作用。建築物內設壁爐，並有地下室。整體外觀為連
+           續的半圓栱，使得造型非常富有節奏感。領事館的紅磚從廈門運來，工匠聘自大陸，迴廊的圓栱在夕陽下被映照得更顯古意盎然。竹節狀的落水管是清末洋樓的特色，轉角的磚柱為雙柱並立，構造更為穩固。
+           民國75年（西元1986年）始經考證研究修復，現在內部闢為高雄史蹟文物館，陳列有關打狗開拓及近代史之文獻、照片及模型。遊客至此，除可參觀館內豐富收藏外，館外可西眺大海的點點船影，東望市區
+           及港口，南側有曲折保持完好的古道，處處展現迷人的風采。
+
+
+</p>
+        
+             <div class="photo"><img src="https://www.taiwan.net.tw/pic.ashx?qp=1/big_scenic_spots/pic_440_2.jpg&sizetype=3" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:07-525-0100</li>
+　<li>地址:高雄市鼓山區蓮海路20號</li>
+　
+<li>開放時星期日：09:00 – 19:00</li>
+            <li>星期一：休息</li>
+            <li>星期二：10:00 – 19:00</li>
+            <li>星期三：10:00 – 19:00</li>
+            <li>星期四：10:00 – 19:00</li>
+                      
+ <li>星期五：08:30 – 20:00</li>
+            <li>星期六：09:00 – 19:00</li>
+            
+</ul>     
+                      
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
