@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>屏東古蹟</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <style>
+      .head{
+            background-color: antiquewhite;color: black;font-weight: bold;font-size: 30px;
+            text-align: center;padding: 10px;
+                   
+        }
+      
+
+        body {
+            background-image: url(https://cestmarie.com/wp-content/uploads/2019/01/Screenshot-3.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+ 
+ p { 
+    
+    line-height: 40px;　　　          　/* 設定文字行距 */
+   
+}
+
+       .fix{
+  width:60px;
+  height:30px;
+  
+  position:fixed;
+  top:65px;
+  right:0px;
+  background-color: beige ;
+}
+       
+    .container{
+  width: 900px;
+  margin: 0 auto;
+}
+.card{
+  /* 設定父親定位點 */
+  position: relative;
+  width: 270px;
+  
+  float:left;
+  margin: 15px;
+}
+img{
+  display: block;
+  width: 270px;
+  height:200px;  
+
+}
+.info{
+/*   display: none; */
+  opacity: 0;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.3);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.info:hover{
+  -webkit-transition: 500ms;
+  opacity: 1;
+}
+    
+    .photo{
+    float:right;
+    width:50%;
+}
+.intro{
+    float:left;
+    width:50%;
+}
+    
+    .info a{
+  color: #fff;
+  font-size:18px;
+}
+   
+    .toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+ 
+/* 48px */
+.toTop-arrow {
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 25px;
+	height: 6px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.42rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.42rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+/* 56px */
+.toTop-arrow {
+	width: 3.5rem;
+	height: 3.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 31px;
+	height: 7px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.4rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.4rem;
+}
+.toTop-arrow:focus {outline: none;}
+    
+    
+    
+    </style>
+    
+    
+    
+    </head>
+
+<body>
+   <button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+</script>
+    
+    <a class="fix" href="index.html">回首頁</a>
+    
+    <div class="head">屏東古蹟</div> 
+  
+    
+   <div class="container">
+   
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/%E4%B9%9D%E5%A6%82%E4%B8%89%E5%B1%B1%E5%9C%8B%E7%8E%8B%E5%BB%9F%E4%B8%80%E6%99%AF1.jpg/375px-%E4%B9%9D%E5%A6%82%E4%B8%89%E5%B1%B1%E5%9C%8B%E7%8E%8B%E5%BB%9F%E4%B8%80%E6%99%AF1.jpg" alt="">
+    <div class="info">
+     <a  href="#section5">九如三山國王廟</a>   
+
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/%E5%B1%8F%E6%9D%B1%E6%9B%B8%E9%99%A2.JPG/432px-%E5%B1%8F%E6%9D%B1%E6%9B%B8%E9%99%A2.JPG" alt="">
+    <div class="info">
+    <a  href="#section4">屏東書院</a> 
+      
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/%E4%B8%8B%E6%B7%A1%E6%B0%B4%E6%BA%AA%E9%90%B5%E6%A9%8B%EF%BC%88%E9%AB%98%E5%B1%8F%E6%BA%AA%E8%88%8A%E9%90%B5%E6%A9%8B%EF%BC%89.jpg/432px-%E4%B8%8B%E6%B7%A1%E6%B0%B4%E6%BA%AA%E9%90%B5%E6%A9%8B%EF%BC%88%E9%AB%98%E5%B1%8F%E6%BA%AA%E8%88%8A%E9%90%B5%E6%A9%8B%EF%BC%89.jpg" alt="">
+    <div class="info">
+     <a  href="#section3">下淡水溪鐵橋 </a> 
+      
+    </div>
+  </div>
+   <div class="card">
+    <img src="https://www.cultural.pthg.gov.tw/PhotoData/1051030209170a.jpg" alt="">
+    <div class="info">
+     <a   style="color: aliceblue;"  href="#section2">魯凱族好茶舊社</a> 
+     
+    </div>
+  </div>
+  
+         <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/%E8%90%AC%E9%87%91%E5%A4%A9%E4%B8%BB%E6%95%99%E5%A0%82%EF%BC%88%E8%90%AC%E9%87%91%E8%81%96%E6%AF%8D%E8%81%96%E6%AE%BF%EF%BC%89.jpg/375px-%E8%90%AC%E9%87%91%E5%A4%A9%E4%B8%BB%E6%95%99%E5%A0%82%EF%BC%88%E8%90%AC%E9%87%91%E8%81%96%E6%AF%8D%E8%81%96%E6%AE%BF%EF%BC%89.jpg" alt="">
+    <div class="info">
+     <a  href="#section1">萬金聖母聖殿</a>
+      
+    </div>
+  </div>
+         <div class="card">
+    <img src="https://www.dbnsa.gov.tw/att/pic/b_11005462.jpg" alt="">
+    <div class="info">
+     <a  href="#section6">恆春古城門</a> 
+     
+    </div>
+  </div>
+         </div>
+  
+  
+   
+    <section id="section1" >
+    
+    <div  class="container">
+    
+         
+     
+         <hr>
+       <h1>萬金聖母聖殿</h1>
+        <p >萬金聖母聖殿為天主教臺灣第一座聖殿，也是臺灣現存最古老的教堂建築，閩洋折衷的建築造型及裝飾風格，既表達宗教意涵也兼容本土色彩，除使用哥德建築形式
+            及部分古典元素，並配合當地工法、就地取材。聖堂自清咸豐時期開教迄今，改善平埔族人經濟，融入當地社會，居民作息遵循聖堂鐘聲，形成同一信仰的「教友村」
+            ，是臺灣罕見現象，也在臺灣天主教發展史中寫下重要的一頁。歷史悠久的「聖母遊行」，結合西方宗教與在地民俗文化，為全臺最大規模的天主教活動，並見證了萬
+            金地區多元族群融合的歷史。</p>
+         
+             <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/%E8%90%AC%E9%87%91%E5%A4%A9%E4%B8%BB%E6%95%99%E5%A0%82%EF%BC%88%E8%90%AC%E9%87%91%E8%81%96%E6%AF%8D%E8%81%96%E6%AE%BF%EF%BC%89.jpg/375px-%E8%90%AC%E9%87%91%E5%A4%A9%E4%B8%BB%E6%95%99%E5%A0%82%EF%BC%88%E8%90%AC%E9%87%91%E8%81%96%E6%AF%8D%E8%81%96%E6%AE%BF%EF%BC%89.jpg" style=" width:540px ; height:360px ;"  ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　<li>電話:08-783-2005</li>
+　<li>地址:屏東縣萬巒鄉萬金村萬興路24號</li>
+           <li>開放時星期日：09:00-21:00</li>
+            <li>星期一：09:00-21:00</li>
+            <li>星期二:09:00-21:00</li>
+            <li>星期三：09:00-21:00</li>
+            <li>星期四：09:00-21:00</li>
+                      
+ <li>星期五：09:00-21:00</li>
+            <li>星期六：09:00-21:00</li>
+            <li>門票資訊:免費</li>
+            
+         
+            
+</ul>     
+             
+	</div>
+
+        
+             
+         
+ 
+        
+      
+    
+    
+ </div>    
+     </section>
+    
+    
+    <section id="section2" >
+    
+     <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>魯凱族好茶舊社</h1>
+         <p >好茶舊社相傳是清代稱為「加者膀眼社」的西魯凱族於西元1310年由大南社遷居的社群聚落，是目前惟一被列為國定古蹟的原住民聚落。位於屏東縣霧臺鄉霧頭山西方、隘寮南溪北側、
+             山地門東方，海拔約930公尺的斜坡地上，有「雲豹的故鄉」之稱。 好茶舊社的建築多依山坡錯落而建，以頭目的住屋為中心。聚落北側有一處水源地及族人聚會場所，西南方有昔時
+             祖先放置人頭骨的石架。平面多呈矩形，採當地的灰黑色板岩及頁岩為建築材料，俗稱石板屋。屋內為敞間，以中柱、寢臺等區隔出不同的生活空間，包括居室、穀倉、寢臺及豬圈等，
+             居室與穀倉間並設火塘。 頭目住屋前則立石柱及木雕裝飾細緻，以百步蛇圖紋為貴族頭目的象徵和專用，其他一般住屋裝飾較少。由於地處深山，交通不便，民國66年（西元1977年
+             ）族人向西側的河階臺地遷村後，目前已無人居住。舊社四周山巒疊抱，林木蒼翠；房舍配置井然，且與環境融為一體，是魯凱族群生活的記憶，也是原住民文化的瑰寶。</p>
+         
+             <div class="photo"><img src="https://www.cultural.pthg.gov.tw/PhotoData/1051030209170a.jpg" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　<li>電話 </li>
+　<li>地址:屏東縣霧台鄉好茶段</li>
+　
+<li>開放時星期日：24小時營業</li>
+            <li>星期一：24小時營業</li>
+            <li>星期二：24小時營業</li>
+            <li>星期三：24小時營業</li>
+            <li>星期四：24小時營業</li>
+                      
+ <li>星期五：24小時營業</li>
+            <li>星期六：24小時營業</li>
+            
+          
+            
+</ul>     
+                      
+	</div>
+
+        
+             
+         
+ 
+        
+      
+    
+    
+ </div> 
+     </section>
+     
+    
+    
+     <section id="section3" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>下淡水溪鐵橋 </h1>
+       <p >下淡水溪在高雄與屏東交界，為高屏溪之舊稱。由於河面寬闊，鐵路必須仰賴鐵橋的架設，火車才能通過。下淡水溪鐵橋的出現，正是縱貫鐵路開通的產物。下淡水溪橋在
+           日治時期縱貫線抵達高雄後，由高雄經屏東、潮州到溪州的潮州線上，全長47公里鐵路的中段，也就是九曲堂附近。 這條鐵路支線建設的目的，在加速來自高雄港人員及
+           軍事物資的運送以及屏東平原砂糖的開發。但因河面水流湍急，工程技術困難，因此在臺灣總督府技師飯田豊二的規劃設計下，歷經三年，於日大正2年（西元1913年）12月
+           20日完工。鐵橋完工通車後，以當時日本官方刊物的說法，是「東洋第一長橋，遠望有如彩虹一般，是南部臺灣的一大偉觀」。 下淡水溪橋又稱高屏溪舊鐵橋，為單線鐵橋，
+           全長1526公尺，以23個橋墩分隔24個橋孔而成。建造當時以圓弧鋼桁架採簡支對稱山型鋼構桁架設計，混凝土橋臺寬度7.55公尺，桁高4.5公尺，為當時臺灣第一長橋，
+           也是東洋第一大鐵橋。
+
+</p>
+        
+             <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/%E4%B8%8B%E6%B7%A1%E6%B0%B4%E6%BA%AA%E9%90%B5%E6%A9%8B%EF%BC%88%E9%AB%98%E5%B1%8F%E6%BA%AA%E8%88%8A%E9%90%B5%E6%A9%8B%EF%BC%89.jpg/432px-%E4%B8%8B%E6%B7%A1%E6%B0%B4%E6%BA%AA%E9%90%B5%E6%A9%8B%EF%BC%88%E9%AB%98%E5%B1%8F%E6%BA%AA%E8%88%8A%E9%90%B5%E6%A9%8B%EF%BC%89.jpg" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:+886-7-2225136</li>
+　<li>地址:	台鐵屏東線九曲堂車站至六塊厝車站間</li>
+　
+<li>開放時星期日：09:00-17:00</li>
+            <li>星期一：休息</li>
+            <li>星期二:09:00-17:00</li>
+            <li>星期三：休息</li>
+            <li>星期四：09:00-17:00</li>
+                      
+ <li>星期五：09:00-17:00</li>
+            <li>星期六：09:00-17:00</li>
+            <li>門票資訊:免費</li>
+</ul>     
+                      
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+    
+    
+    <section id="section4" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>屏東書院</h1>
+       <p >屏東書院是於清嘉慶二十年（1815年）建於臺灣鳳山縣港西里阿猴街（今屏東縣屏東市）的一座書院，書院的功能廢止後改為屏東孔廟，於民國七十四年（1985年）
+           11月27日公告為三級古蹟[1]，三年後（1988年）名稱改回屏東書院。「屏東書院」創建至今近200年(1815-)，因極具歷史文化價值且保存尚稱完善，於74年11
+           月27日被指定為三級古蹟。清末臺灣雖曾設有大量的書院建築，但歷經日據時期與光復後的變遷與破壞，至今僅餘12座保存較好的書院得以列入古蹟名單，而南部地
+           區數量稀少，僅「屏東書院」與高雄鳳山的「鳳儀書院」等二處，故顯彌足珍貴。
+
+</p>
+        
+             <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/%E5%B1%8F%E6%9D%B1%E6%9B%B8%E9%99%A2.JPG/432px-%E5%B1%8F%E6%9D%B1%E6%9B%B8%E9%99%A2.JPG" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:08 736 1544</li>
+　<li>地址:屏東市太平里勝利路38號</li>
+　
+<li>開放時星期日 :8：00 ~ 17：30</li>
+            <li>星期一：8：00 ~ 17：30</li>
+            <li>星期二：8：00 ~ 17：30</li>
+            <li>星期三：8：00 ~ 17：30</li>
+            <li>星期四：8：00 ~ 17：30</li>
+                      
+ <li>星期五：8：00 ~ 17：30</li>
+            <li>星期六：8：00 ~ 17：30</li>
+            <li>門票資訊:免費參觀</li>
+</ul>     
+                 
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+   
+    <section id="section5" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>九如三山國王廟</h1>
+       <p style="position: relative;left: 0px;" >
+           九如三山國王廟的建築格局為三川殿、拜殿、正殿和後殿。三山國王雖為潮州移民的主要信仰，然而「九如十三庄的居民多樣，作為信仰中心，建築風格呈現閩粵混合的風格。
+           由於建廟時間早，加上未遭受嚴重破壞或拆除重建，三山國王廟的建築風格保留傳統磚造木構造的構造，以及清代中期、晚期、日治與民國歷次修建的元素。
+
+
+</p>
+        
+             <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/%E4%B9%9D%E5%A6%82%E4%B8%89%E5%B1%B1%E5%9C%8B%E7%8E%8B%E5%BB%9F%E4%B8%80%E6%99%AF1.jpg/375px-%E4%B9%9D%E5%A6%82%E4%B8%89%E5%B1%B1%E5%9C%8B%E7%8E%8B%E5%BB%9F%E4%B8%80%E6%99%AF1.jpg" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:08 739 1023</li>
+　<li>地址:屏東縣九如鄉九明村仁愛街174號</li>
+　
+<li>開放時星期日：06::00-21:00</li>
+            <li>星期一：06::00-21:00</li>
+            <li>星期二：06::00-21:00</li>
+            <li>星期三：06::00-21:00</li>
+            <li>星期四：06::00-21:00</li>
+                      
+ <li>星期五：06::00-21:00</li>
+            <li>星期六：06::00-21:00</li>
+        
+</ul>     
+                       
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+    
+    <section id="section6" >
+    
+    <div  class="container">
+    
+         
+    
+         <hr>
+       <h1>恆春古城門</h1>
+       <p>
+
+        恆春古城是臺灣現存最完整的古城。自西元1875年興工至今已近140年歷史。經歷過無數次天災人禍，古城早已非當初原貌。內政部原於西元1979年(民國68年)暫定為一級古蹟，
+        後來因為現況修復有缺失，復於西元1985年(民國74年)公告指定為台閩地區二級古蹟。恆春建城的主因在於軍事防禦和國防考量。始建於西元1875年(清光緒元年)，至西元1879年
+        (清光緒五年)竣工。城址是由擅長堪輿風水術的官員劉璈所選定，以猴洞山為龍脈，分別於東西南北建置四座城門，均設有砲台，城牆外有護城河圍繞，四邊並有庇佑城池的群山層巒。
+        東西兩邊以龍鑾山(左青龍)和虎頭山(右白虎)為左右護衛；南邊面向西屏山，猶如案桌在前(前朱雀)；北邊背倚三台山當靠山(後玄武)。
+
+
+</p>
+        
+             <div class="photo"><img src="https://www.dbnsa.gov.tw/att/pic/b_11005462.jpg" style=" width:540px ; height:360px ;" ></div>
+     
+        <p style="font-size:25px ;">景點資訊:</p>
+<div class="intro">
+	    <ul>
+　
+            
+            <li>電話:+886-8-7360330-3</li>
+　<li>地址:東門-恆春鎮東門路;西門-恆春鎮中山路;南門-恆春鎮恆南路;北門-恆春鎮北門路</li>
+　
+<li>開放時星期日：24小時營業</li>
+            <li>星期一：24小時營業</li>
+            <li>星期二：24小時營業</li>
+            <li>星期三：24小時營業</li>
+            <li>星期四：24小時營業</li>
+                      
+ <li>星期五：24小時營業</li>
+            <li>星期六：24小時營業</li>
+</ul>     
+                      
+	</div>
+
+        
+             
+         
+ 
+        
+     
+    
+    
+ </div>    
+      </section>
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
